@@ -23,37 +23,71 @@ const html = `
         });
       }, 500);
     </script>
-    <style>
-      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
-      @font-face {
-        font-family: "neo-sans";
-        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-        font-style: normal;
-        font-weight: 700;
-      }
-      html {
-        font-family: neo-sans;
-        font-weight: 700;
-        font-size: calc(62rem / 16);
-      }
-      body {
-        background: white;
-      }
-      section {
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
+   
   </head>
   <body>
-    <section>
-     hi i'am yassmine
-    </section>
+   <!DOCTYPE html>
+<html>
+<head>
+	<title>Ajout Livre</title>
+	
+	<style type="text/css">
+		body{
+    		background: #e1edf4;
+		}
+    </style>
+    <!-- Barre de menu -->
+    <ul>
+        <li><a href="admin.php">Admin</a></li>
+        <li><a href="consult.php">Nos Livres</a></li>
+        <li><a href="acceuil.html">Home</a></li>
+	</ul>
+</head>
+<body>
+
+
+	<div class="form" align="center">
+		<h1>Ajout Livre</h1>
+	<fieldset>
+		<table>
+			<tr>
+				<td> <label for="Titre">Titre: </label></td>
+				<td>
+					<input type="text" name="Titre" id="Titre">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="id">Identifiant: </label></td>
+				<td><input type="texte" name="id" id="id"></td>
+			</tr>
+			<tr>
+				<td><label for="Auteur">Auteur: </label></td>
+				<td><input type="texte" name="Auteur" id="Auteur"></td>
+			</tr>
+			<tr>
+				<td><label for="Langue">Langue: </label></td>
+				<td><input type="texte" name="Langue" id="Langue"></td>
+			</tr>
+			<tr>
+				<td><label for="Categorie">Categorie: </label></td>
+				<td><input type="texte" name="Categorie" id="Categorie"></td>
+			</tr>
+			<tr>
+				<td><label for="file">Image: </label></td>
+				<td><input type="file" name="file" id="file"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="valider" value="Valider"> </td>
+				<td><input type="submit" name="annuler" value="Reset"> </td>
+			</tr>
+		</table>
+
+		
+	</fieldset>
+	</div>
+	</form>
+</body>
+</html>
   </body>
 </html>
 `
