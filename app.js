@@ -36,12 +36,7 @@ const html = `
     		background: #e1edf4;
 		}
     </style>
-    <!-- Barre de menu -->
-    <ul>
-        <li><a href="admin.php">Admin</a></li>
-        <li><a href="consult.php">Nos Livres</a></li>
-        <li><a href="acceuil.html">Home</a></li>
-	</ul>
+    
 </head>
 <body>
 
